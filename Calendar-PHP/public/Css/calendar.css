@@ -1,0 +1,29 @@
+.calendar_table{
+    width: 100% ;
+    /* 128px: the height of the navbar */
+    height: calc(100vh - 128px);
+}
+
+.calendar_table td {
+    border: 1px solid #CCC;
+    padding: 10px;
+    vertical-align: top;
+    /* 100/7 = 14.29% */
+    width: 14.29%;
+    /* We have 5 weeks in the month -> 20*5=100 */
+    height: 16.66;
+}
+
+.calendar_weekday {
+    font-weight: bold;
+    color: black;
+    font-size: 1.3em;
+}
+
+.calendar_day{
+    font-size: 1.3em;
+}
+
+.calendar_otherMonth .calendar_day {
+    opacity: 0.3;
+}
